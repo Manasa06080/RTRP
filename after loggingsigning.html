@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bike Pooling Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background-color: #000000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #fff;
+      letter-spacing: 2px;
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .user-info img {
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .user-info .username {
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .main-content {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 80px 20px 20px 20px; /* Added padding to make space below the fixed header */
+      background: linear-gradient(145deg, #4CAF50, #45a049);
+      color: #fff;
+      height: 100%; /* Full height of the screen */
+      overflow: hidden;
+    }
+
+    .main-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      margin-top: 20px;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .buttons button {
+      background-color: #000000; /* New background color */
+      color: #fff;
+      font-size: 20px; /* Increased font size */
+      padding: 15px 30px; /* Increased padding */
+      margin: 15px;
+      border: 2px solid #040404; /* Matching border color */
+      border-radius: 8px; /* Slightly more rounded corners */
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: bold;
+      width: 280px; /* Increased width */
+      max-width: 90%;
+    }
+
+    .buttons button:hover {
+      background-color: #070707; /* Hover effect with a darker color */
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .logo {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .main-content {
+        padding: 100px 15px 20px 15px;
+      }
+
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .buttons button {
+        width: 80%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logo {
+        font-size: 30px;
+      }
+
+      .buttons button {
+        width: 90%;
+        padding: 12px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Bike Pool</div>
+    <!-- Right-aligned user info section -->
+    <div class="user-info">
+      <img src="https://via.placeholder.com/30" alt="User Avatar">
+      <span class="username">Hemanth</span> <!-- Username or placeholder text -->
+    </div>
+  </header>
+
+  <div class="main-content">
+    <img class="main-image" src="https://via.placeholder.com/800x400" alt="Bike Pooling">
+    <div class="buttons">
+        <a href="ride booking.html"><button>Book a ride</button></a>
+        <a href="rider reg page.html"><button>Become a rider</button></a>
+    </div>
+  </div>
+</body>
+</html>

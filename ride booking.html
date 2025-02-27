@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Ride - Bike Pooling</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 15px 20px;
+      text-align: center;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .input-group {
+      margin-bottom: 15px;
+    }
+
+    .input-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .input-group select {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .form-container button {
+      width: 100%;
+      padding: 15px;
+      background-color: #000;
+      color: #fff;
+      font-size: 18px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .form-container button:hover {
+      background-color: #444;
+    }
+
+    .form-container .back-btn {
+      display: inline-block;
+      margin-top: 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .form-container .back-btn a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bike Pooling</h1>
+    <p>Book a Ride</p>
+  </header>
+
+  <div class="form-container">
+    <h2>Book Your Ride</h2>
+    <form action="submit-booking.html" method="POST">
+      <div class="input-group">
+        <label for="pickup-location">Pickup Location</label>
+        <input type="text" id="pickup-location" name="pickup-location" required>
+      </div>
+
+      <div class="input-group">
+        <label for="drop-location">Drop Location</label>
+        <input type="text" id="drop-location" name="drop-location" required>
+      </div>
+
+      <div class="input-group">
+        <label for="ride-date">Ride Date</label>
+        <input type="date" id="ride-date" name="ride-date" required>
+      </div>
+
+      <div class="input-group">
+        <label for="ride-time">Ride Time</label>
+        <input type="time" id="ride-time" name="ride-time" required>
+      </div>
+
+      <div class="input-group">
+        <label for="vehicle-type">Vehicle Type</label>
+        <select id="vehicle-type" name="vehicle-type" required>
+          <option value="bike">Bike</option>
+          <option value="scooter">Scooter</option>
+          <option value="car">Car</option>
+        </select>
+      </div>
+
+      <button type="submit">Book Ride</button>
+    </form>
+
+    <div class="back-btn">
+      <p>Want to go back? <a href="code.html">Home</a></p>
+    </div>
+  </div>
+
+</body>
+</html>
